@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/gym.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <a class="btn" href="#"
+                tooltip="hello some long stuff I'm trea. fafaefafag  afaefa faefafaag a aga agaa">item 1</a>
+            <a class="btn" onclick="openNotificationTest();" href="#">open notification</a>
+            <a class="btn" onclick="openDialogTest();" href="#">open dialog</a>
+            <a class="btn" href="#">item 2</a>
+        </div>
+        <div>
+            <a class="btn" href="#">util 3</a>
+            <a class="btn" href="#">util 4</a>
+            <a class="btn" href="#">util 5</a>
+        </div>
+        <div>
+            <a class="btn btn-profile" href="#">profile</a>
+            <a class="btn btn-login" href="#">login</a>
+            <a class="btn btn-logout" href="#">logout</a>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="container">
+            <div class="column">
+                <div class="row">
+                    <a class="btn" href="#">btn</a>
+                </div>
+                <div class="row">
+                    <a class="btn" href="#" tooltip-b="tooltip test 145">item 1</a>
+                    <a class="btn" href="#" tooltip-t="tooltip test 145">item 2</a>
+                    <a class="btn" href="#" tooltip-l="tooltip test 145">item 3</a>
+                    <a class="btn" href="#" tooltip-r="tooltip test 145">item 4</a>
+                    <a class="btn btn-profile" href="#">profile</a>
+                    <a class="btn btn-login" href="#">login</a>
+                    <a class="btn btn-logout" href="#">logout</a>
+                    <button class="btn" type="submit">default</button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container styled">
+            <div class="nav">
+                <div>
+                    <a class="btn" href="#"
+                        tooltip="hello some long stuff I'm trea. fafaefafag  afaefa faefafaag a aga agaa">item 1</a>
+                    <a class="btn" href="#">item 2</a>
+                    <a class="btn" href="#">item 3</a>
+                    <a class="btn" href="#">item 2</a>
+                </div>
+                <div>
+                    <a class="btn" href="#">util 1</a>
+                    <a class="btn" href="#">util 2</a>
+                    <a class="btn" href="#">util 3</a>
+                    <a class="btn" href="#">util 4</a>
+                    <a class="btn" href="#">util 5</a>
+                </div>
+                <div>
+                    <a class="btn btn-profile" href="#">profile</a>
+                    <a class="btn btn-login" href="#">login</a>
+                    <a class="btn btn-logout" href="#">logout</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <a class="btn btn-remove" href="#" tooltip-b="click to remove">Remove</a>
+                    <a class="btn btn-edit" href="#" tooltip-t="click to edit">edit</a>
+                    <a class="btn btn-confirm" href="#" tooltip-l="click to confirm">confirm</a>
+                    <a class="btn" href="#" tooltip-r="tooltip test 145">item 4</a>
+                    <button class="btn" type="submit">default</button>
+                </div>
+
+                <div class="row">
+                    <form class="form">
+                        <div class="column">
+                            <div class="bar"></div>
+                            <div class="bar loading"></div>
+                            <div class="bar suspended"></div>
+                            <input class="textbox" type="text" placeholder="search">
+                            <input class="textbox" type="text" placeholder="input">
+                            <input class="textbox" type="text" placeholder="input2">
+                            <button class="btn btn-submit" type="submit">submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <input class="textbox" type="text" placeholder="hello">
+                    <input class="textbox pass" type="password" placeholder="password">
+                    <a class="btn btn-close"></a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="iframe-container">
+                <iframe is="x-frame-bypass" allowfullscreen
+                    src="https://altadefinizionecommunity.live/titolo/11849-spongebob-amici-in-fuga-hd/watching.html"
+                    frameborder="0"></iframe>
+                <a class="btn">
+                    toggle
+                </a>
+            </div>
+            <div class="iframe-container">
+                <iframe is="x-frame-bypass" llowfullscreen src="https://streamingcommunity.city/watch/1123"
+                    frameborder="0"></iframe>
+                <a class="btn">
+                    toggle
+                </a>
+            </div>
+        </div>
+
+        <div class="dialog info">
+            <div>
+                <span>few infos</span>
+                <a class="btn btn-close"></a>
+            </div>
+            <div>
+                <p>
+                    I advice you to do this and not this. I mean, it's your choice, but I think you should do this.
+                </p>
+            </div>
+            <div>
+                <button>accept</button>
+            </div>
+        </div>
+
+        <!--
+        <div class="notification">
+            <div>
+                <span>notification infos summary</span>
+                <a class="btn btn-close"></a>
+            </div>
+            <div>
+                <span>
+                    some notification infos. some notification infos. some notification infos. some notification infos.
+                </span>
+            </div>
+        </div>
+
+        <div class="dialog error">
+            <div>
+                <span>summary error</span>
+                <a class="btn btn-close">close</a>
+            </div>
+            <div>
+                <span>Something went wrong. Probably you should try to restart or doing something else.</span>
+            </div>
+        </div>
+
+        <div class="dialog info">
+            <div>
+                <span>few infos</span>
+                <a class="btn btn-close"></a>
+            </div>
+            <div>
+                <p>
+                    I advice you to do this and not this. I mean, it's your choice, but I think you should do this.
+                </p>
+            </div>
+            <div>
+                <button>accept</button>
+            </div>
+        </div>
+-->
+        <div class="dialogs-film"></div>
+
+    </div>
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script src="../js/external dependencies/x-frame-bypass.js"></script>
+    <script src="../js/gym-preload.js"></script>
+    <script src="../js/gym.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

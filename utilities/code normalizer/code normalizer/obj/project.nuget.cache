@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kuc/0xS37ew81cfb7j3Bsj2tO3GZ3HWWpEHopwLzsFW8xhMu1FDF8lMeqPqSWc3gYDp3vX+asu0ilmSbN/Fvlw==",
+  "success": true,
+  "projectFilePath": "D:\\Project tests\\gym framework\\utilities\\code normalizer\\code normalizer\\code normalizer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\paolo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\paolo\\.nuget\\packages\\textcopy\\6.1.0\\textcopy.6.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

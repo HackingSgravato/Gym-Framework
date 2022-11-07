@@ -1,0 +1,345 @@
+{
+	// Place your gym framework workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Start": {
+		"scope": "html",
+		"prefix": "gym start",
+		"body": [
+			"<div class=\"nav\">",
+"        <!-- Start Section -->",
+"        <div>",
+"    ",
+"        </div>",
+"        <!-- Center Section -->",
+"        <div>",
+"    ",
+"        </div>",
+"        <!-- End Section -->",
+"        <div>",
+"    ",
+"        </div>",
+"    </div>",
+"    <div class=\"body\">",
+"    ",
+"    </div>",
+
+		],
+		"description": "Gym Recommended Body Start"
+	},
+	"Nav": {
+		"scope": "html",
+		"prefix": "gym nav",
+		"body": [
+			"<div class=\"nav\">",
+"    <!-- Start Section -->",
+"    <div>",
+"",
+"    </div>",
+"    <!-- Center Section -->",
+"    <div>",
+"",
+"    </div>",
+"    <!-- End Section -->",
+"    <div>",
+"",
+"    </div>",
+"</div>",
+		],
+		"description": "Gym Nav Component"
+	},
+	"Body": {
+		"scope": "html",
+		"prefix": "gym body",
+		"body": [
+			"<div class=\"body\">",
+"",
+"</div>",
+		],
+		"description": "Gym Body Component"
+	},
+	"Button": {
+		"scope": "html",
+		"prefix": "gym button",
+		"body": [
+			"<a class=\"btn$1\" ${2:href=\"$3\"}>$0</a>",
+		],
+		"description": "Gym Button Component"
+	},
+	"Close Button": {
+		"scope": "html",
+		"prefix": "gym close button",
+		"body": [
+			"<a class=\"btn btn-close$1\" ${2:href=\"$3\"}></a>",
+			"$0"
+		],
+		"description": "Gym Close Button Component"
+	},
+	"Login Button": {
+		"scope": "html",
+		"prefix": "gym login button",
+		"body": [
+			"<a class=\"btn btn-login$1\" ${2:href=\"$3\"}>$0</a>",
+		],
+		"description": "Gym Login Button Component"
+	},
+	"Logout Button": {
+		"scope": "html",
+		"prefix": "gym logout button",
+		"body": [
+			"<a class=\"btn btn-logout$1\" ${2:href=\"$3\"}>$0</a>",
+		],
+		"description": "Gym Logout Button Component"
+	},
+	"Profile Button": {
+		"scope": "html",
+		"prefix": "gym profile button",
+		"body": [
+			"<a class=\"btn btn-profile$1\" ${2:href=\"$3\"}>$0</a>",
+		],
+		"description": "Gym Profile Button Component"
+	},
+	"Remove Button": {
+		"scope": "html",
+		"prefix": "gym remove button",
+		"body": [
+			"<a class=\"btn btn-remove$1\" ${2:href=\"$3\"}>$0</a>",
+		],
+		"description": "Gym Remove Button Component"
+	},
+	"Edit Button": {
+		"scope": "html",
+		"prefix": "gym edit button",
+		"body": [
+			"<a class=\"btn btn-edit$1\" ${2:href=\"$3\"}>$0</a>",
+		],
+		"description": "Gym Edit Button Component"
+	},
+	"Confirm Button": {
+		"scope": "html",
+		"prefix": "gym confirm button",
+		"body": [
+			"<a class=\"btn btn-confirm$1\" ${2:href=\"$3\"}>$0</a>",
+		],
+		"description": "Gym Confirm Button Component"
+	},
+	"Container": {
+		"scope": "html",
+		"prefix": "gym container",
+		"body": [
+			"<div class=\"container\">",
+"        $0",
+"    </div>",
+		],
+		"description": "Gym Container Component"
+	},
+	"Styled Container": {
+		"scope": "html",
+		"prefix": "gym styled container",
+		"body": [
+			"<div class=\"container styled\">",
+"        $0",
+"    </div>",
+		],
+		"description": "Gym Styled Container Component"
+	},
+	"Row": {
+		"scope": "html",
+		"prefix": "gym row",
+		"body": [
+			"<div class=\"row\">",
+"        $0",
+"    </div>",
+		],
+		"description": "Gym Row Component"
+	},
+	"Column": {
+		"scope": "html",
+		"prefix": "gym column",
+		"body": [
+			"<div class=\"column\">",
+"        $0",
+"    </div>",
+		],
+		"description": "Gym Column Component"
+	},
+	"Bar": {
+		"scope": "html",
+		"prefix": "gym bar",
+		"body": [
+			"<div class=\"bar\"></div>",
+			"$0",
+		],
+		"description": "Gym Bar Component"
+	},
+	"Loading Bar": {
+		"scope": "html",
+		"prefix": "gym loading bar",
+		"body": [
+			"<div class=\"bar loading\"></div>",
+			"$0",
+		],
+		"description": "Gym Loading Bar Component"
+	},
+	"Suspended Bar": {
+		"scope": "html",
+		"prefix": "gym suspended bar",
+		"body": [
+			"<div class=\"bar suspended\"></div>",
+			"$0",
+		],
+		"description": "Gym Suspended Bar Component"
+	},
+	"Text Input": {
+		"scope": "html",
+		"prefix": "gym text input",
+		"body": [
+			"<input class=\"textbox\" type=\"text\" placeholder=\"$1\">",
+			"$0",
+		],
+		"description": "Gym Text Input Component"
+	},
+	"Password Input": {
+		"scope": "html",
+		"prefix": "gym password input",
+		"body": [
+			"<input class=\"textbox pass\" type=\"text\" placeholder=\"$1\">",
+			"$0",
+		],
+		"description": "Gym Text Input Component"
+	},
+	"Tooltip": {
+		"scope": "html",
+		"prefix": "gym tooltip",
+		"body": [
+			"tooltip-${1|t,b,l,r|}=\"$0\"",
+		],
+		"description": "Gym Tooltip Component"
+	},
+	"Form": {
+		"scope": "html",
+		"prefix": "gym form",
+		"body": [
+			"<form action=\"$1\" class=\"form\">",
+"                        $2",
+"                    </form>",
+"$0",
+		],
+		"description": "Gym Form Component"
+	},
+	"Iframe": {
+		"scope": "html",
+		"prefix": "gym iframe",
+		"body": [
+			"<div class=\"iframe-container\">",
+"            <iframe is=\"x-frame-bypass\" allowfullscreen",
+"                src=\"$1\"",
+"                frameborder=\"0\"></iframe>",
+"            <a class=\"btn\">",
+"                ${2:toggle}",
+"            </a>",
+"        </div>",
+"$0",
+		],
+		"description": "Gym Iframe Component"
+	},
+	"Info Dialog": {
+		"scope": "html",
+		"prefix": "gym info dialog",
+		"body": [
+			"<div class=\"dialog info\">",
+"            <div>",
+"                <span>${1:Information}</span>",
+"                <a class=\"btn btn-close\"></a>",
+"            </div>",
+"            <div>",
+"                <p>",
+"                    ${2:Explaination of the information}",
+"                </p>",
+"            </div>",
+"            <div>",
+"                <button>ok</button>",
+"                $3",
+"            </div>",
+"        </div>",
+"$0",
+		],
+		"description": "Gym Info Dialog Component"
+	},
+	"Error Dialog": {
+		"scope": "html",
+		"prefix": "gym error dialog",
+		"body": [
+			"<div class=\"dialog error\">",
+"            <div>",
+"                <span>${1:Error}</span>",
+"                <a class=\"btn btn-close\">close</a>",
+"            </div>",
+"            <div>",
+"                <span>${2:Explaination of the error}</span>",
+"            </div>",
+"        </div>",
+"$0",
+		],
+		"description": "Gym Error Dialog Component"
+	},
+	"Dialog Film": {
+		"scope": "html",
+		"prefix": "gym dialog film",
+		"body": [
+			"<div class=\"dialogs-film\"></div>",
+			"$0",
+		],
+		"description": "Gym Dialog Film Component"
+	},
+	"Notification": {
+		"scope": "html",
+		"prefix": "gym notification",
+		"body": [
+			"<div class=\"notification\">",
+"            <div>",
+"                <span>${1:Notification Title}</span>",
+"                <a class=\"btn btn-close\"></a>",
+"            </div>",
+"            <div>",
+"                <span>",
+"                    ${2:Notification Summary}",
+"                </span>",
+"            </div>",
+"        </div>",
+"$0",
+		],
+		"description": "Gym Notification Component"
+	},
+	"Css": {
+		"scope": "html",
+		"prefix": "gym css",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Gym Css Needed Imports"
+	},
+	"Js": {
+		"scope": "html",
+		"prefix": "gym js",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Gym Js Needed Imports"
+	}
+}

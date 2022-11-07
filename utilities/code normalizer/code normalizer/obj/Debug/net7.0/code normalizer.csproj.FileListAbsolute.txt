@@ -1,0 +1,18 @@
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.csproj.AssemblyReference.cache
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.AssemblyInfoInputs.cache
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.AssemblyInfo.cs
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.csproj.CoreCompileInputs.cache
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\bin\Debug\net7.0\code normalizer.exe
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\bin\Debug\net7.0\code normalizer.deps.json
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\bin\Debug\net7.0\code normalizer.runtimeconfig.json
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\bin\Debug\net7.0\code normalizer.dll
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\bin\Debug\net7.0\code normalizer.pdb
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\bin\Debug\net7.0\TextCopy.dll
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.csproj.CopyComplete
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.dll
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\refint\code normalizer.dll
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.pdb
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\code normalizer.genruntimeconfig.cache
+D:\Project tests\gym framework\utilities\code normalizer\code normalizer\obj\Debug\net7.0\ref\code normalizer.dll

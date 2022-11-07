@@ -1,0 +1,971 @@
+/* body */
+body {
+    background-color: var(--main-color);
+    color           : var(--main-color-alternate);
+    font-family     : 'Open Sans', sans-serif;
+    font-size       : 16px;
+    line-height     : 1.5;
+    margin          : 0;
+    padding         : 0;
+    text-transform  : capitalize;
+}
+
+/* body container */
+.body {
+    padding: 2em 10%;
+}
+
+/* nav */
+div.nav {
+    -khtml-user-select     : none;
+    -moz-user-select       : none;
+    -ms-user-select        : none;
+    -webkit-touch-callout  : none;
+    -webkit-user-select    : none;
+    background-color       : var(--main-color-light);
+    border-radius          : var(--border-radius-large);
+    border-top-left-radius : 0;
+    border-top-right-radius: 0;
+    display                : flex;
+    flex-wrap              : nowrap;
+    height                 : 100%;
+    user-select            : none;
+    width                  : 100%;
+}
+
+/* nav in styled container */
+div.container.styled div.nav {
+    margin       : calc(var(--padding-large) * -1);
+    width        : 115%;
+    border-radius: 0;
+    margin-bottom: 5px !important;
+}
+
+/* nav section */
+div.nav div {
+    display: flex;
+}
+
+/* nav start section */
+div.nav div:nth-child(1) {
+    margin-right: auto;
+    border-right: 3px solid var(--main-color-lightest);
+}
+
+/* nav start/center section */
+div.nav div:nth-child(1),
+div.nav div:nth-child(2) {
+    gap        : 3px;
+    overflow-x : auto;
+    white-space: nowrap;
+    max-width  : 100%;
+}
+
+/* nav end section */
+div.nav div:nth-child(3) {
+    margin-left: auto;
+}
+
+/* nav in styled start container section first btn */
+div.container.styled div.nav div:nth-child(1) a.btn:first-child {
+    border-bottom-left-radius: 0px;
+}
+
+/* nav in styled container end section last btn */
+div.container.styled div.nav div:nth-child(3) a.btn:last-child {
+    border-bottom-right-radius: 0px;
+}
+
+/* toggle iframe fullscreen btn */
+div.iframe-container a.btn {
+    border-radius: 0;
+}
+
+/* toggle iframe fullscreen btn hover */
+div.iframe-container a.btn:hover {
+    outline: 0;
+    background-color: rgba(var(--main-color-darkest), 1);
+}
+
+/* default btn */
+a.btn {
+    align-items     : center;
+    background-color: var(--main-color-lighter);
+    border-radius   : var(--border-radius);
+    color           : var(--gray-500);
+    cursor          : pointer;
+    display         : flex;
+    outline         : 1px solid var(--main-color-lighter);
+    outline-offset  : -1px;
+    padding         : 0.1em 0.5em;
+    text-decoration : none;
+    transition      : background-color 0.2s ease-in-out;
+}
+
+/* default btn active */
+a.btn:active {
+    outline-offset: 2px;
+}
+
+/* default button btn */
+button.btn {
+    background-color: var(--gray-800);
+    border          : 1px solid var(--gray-700);
+    border-radius   : var(--border-radius-large);
+    color           : var(--gray-500);
+    cursor          : pointer;
+    outline-color   : var(--gray-700);
+    outline-offset  : 1px;
+    outline-width   : 2px;
+    padding         : 0.25em 1em;
+    text-transform  : capitalize;
+    transition      : all 0.2s ease-in-out;
+}
+
+/* default button btn hover */
+button.btn:hover {
+    background-color: var(--gray-700);
+}
+
+/* default button btn active */
+button.btn:active {
+    border       : 0;
+    outline-style: solid;
+}
+
+/* button submit */
+button.btn.btn-submit {
+    animation          : gradient-anim 2s ease-in-out infinite;
+    background-color   : var(--blue-800);
+    background-image   : linear-gradient(to right, var(--blue-500) 50%, var(--blue-800) 50%);
+    background-position: right;
+    background-size    : 200% 100%;
+    border-color       : var(--blue-500);
+    outline-color      : var(--blue-700);
+}
+
+/* button submit active */
+button.btn.btn-submit:active {
+    background-color: var(--blue-700);
+}
+
+/* close btn */
+a.btn.btn-close {
+    background-color: transparent !important;
+    border-left     : none !important;
+    border-right    : none !important;
+    content         : url("https://img.icons8.com/fluency-systems-regular/24/FFFFFF/delete-sign--v1.png");
+    outline-color   : var(--red-800);
+    outline-offset  : 0;
+    outline-width   : 0;
+}
+
+/* close btn active */
+a.btn.btn-close:active {
+    background-color: var(--red-700) !important;
+    outline-offset  : 1px;
+    outline-width   : 2px;
+}
+
+/* remove btn */
+a.btn.btn-remove {
+    background-color: var(--red-900) !important;
+    border-left     : none !important;
+    border-right    : none !important;
+    outline         : none;
+}
+
+/* remove btn ::before */
+a.btn.btn-remove::before {
+    content: url("https://img.icons8.com/fluency-systems-regular/16/EBEBEB/filled-trash.png");
+    padding: 4px 5px 0 0;
+}
+
+/* remove btn active */
+a.btn.btn-remove:active {
+    background-color: var(--red-800) !important;
+}
+
+/* confirm btn */
+a.btn.btn-confirm {
+    background-color: var(--yellow-900) !important;
+    border-left     : none !important;
+    border-right    : none !important;
+    color           : white;
+    outline         : none;
+}
+
+/* confirm btn ::before */
+a.btn.btn-confirm::before {
+    content: url("https://img.icons8.com/material-outlined/16/EBEBEB/checked--v1.png");
+    padding: 4px 5px 0 0;
+}
+
+/* confirm btn active */
+a.btn.btn-confirm:active {
+    background-color: var(--yellow-800) !important;
+}
+
+/* edit btn */
+a.btn.btn-edit {
+    background-color: var(--gray-600) !important;
+    border-left     : none !important;
+    border-right    : none !important;
+    color           : white;
+    outline         : none;
+}
+
+/* edit btn ::before */
+a.btn.btn-edit::before {
+    content: url("https://img.icons8.com/external-sbts2018-solid-sbts2018/16/EBEBEB/external-modify-basic-ui-elements-2.5-sbts2018-solid-sbts2018.png");
+    padding: 4px 5px 0 0;
+}
+
+/* edit btn active */
+a.btn.btn-edit:active {
+    background-color: var(--gray-700) !important;
+}
+
+/* login btn */
+a.btn.btn-login {
+    background-color: var(--blue-900) !important;
+    border-left     : none !important;
+    border-right    : none !important;
+    outline         : none;
+}
+
+/* login btn active */
+a.btn.btn-login:active {
+    background-color: var(--blue-800) !important;
+}
+
+/* logout btn */
+a.btn.btn-logout {
+    background-color: var(--red-700) !important;
+    border-left     : none !important;
+    border-right    : none !important;
+    outline         : none;
+}
+
+/* logout btn active */
+a.btn.btn-logout:active {
+    background-color: var(--red-600) !important;
+}
+
+/* profile btn */
+a.btn.btn-profile {
+    background-color: var(--green-900) !important;
+    border-left     : none !important;
+    border-right    : none !important;
+    outline         : none;
+}
+
+/* profile btn active */
+a.btn.btn-profile:active {
+    background-color: var(--green-800) !important;
+}
+
+/* nav default btn */
+div.nav div a.btn {
+    background-color: inherit;
+    outline         : 0;
+}
+
+/* nav default btn hover */
+div.nav div a.btn:hover {
+    background-color: var(--main-color-lighter);
+}
+
+/* nav default btn active */
+div.nav div a.btn:active {
+    background-color: initial;
+}
+
+/* nav start section default btn except the first btn */
+div.nav div:nth-child(1) a.btn:not(:first-child) {
+    border-top-left-radius : 0;
+    border-top-right-radius: 0;
+}
+
+/* nav start section first btn */
+div.nav div:nth-child(1) a.btn:first-child {
+    border-bottom-left-radius: var(--border-radius-large);
+    border-top-left-radius   : 0;
+    border-top-right-radius  : 0;
+}
+
+/* nav center section default btn */
+div.nav div:nth-child(2) a.btn {
+    width: max-content;
+}
+
+/* nav end section default btn */
+div.nav div:nth-child(3) a.btn {
+    background-color: var(--main-color-lighter);
+    border          : 1px solid var(--main-color-lightest);
+    border-bottom   : none;
+    border-radius   : 0;
+    border-top      : none;
+}
+
+/* nav end section default btn hover */
+div.nav div:nth-child(3) a.btn:hover {
+    background-color: var(--main-color-lightest);
+}
+
+/* nav end section default btn active */
+div.nav div:nth-child(3) a.btn:active {
+    background-color: var(--main-color-lighter);
+}
+
+/* nav end section first btn */
+div.nav div:nth-child(3) a.btn:first-child {
+    border-left: none;
+}
+
+/* nav end section last btn*/
+div.nav div:nth-child(3) a.btn:last-child {
+    border-bottom-right-radius: var(--border-radius-large);
+    border-right              : none;
+}
+
+/* info dialog footer button */
+div.dialog.info div:last-child button {
+    background-color: var(--blue-700);
+    border          : 1px solid var(--blue-500);
+    border-radius   : var(--border-radius-small);
+    color           : var(--gray-300);
+    padding         : var(--padding-small);
+    text-transform  : capitalize;
+    transition      : all 0.2s ease-in-out;
+}
+
+/* info dialog footer button hover */
+div.dialog.info div:last-child button:hover {
+    background-color: var(--blue-600);
+    border          : 1px solid var(--blue-400);
+    color           : var(--gray-200);
+}
+
+/* info dialog footer button active */
+div.dialog.info div:last-child button:active {
+    background-color: var(--blue-500);
+}
+
+/* element owns the tooltip */
+*[tooltip-b],
+*[tooltip-t],
+*[tooltip-l],
+*[tooltip-r] {
+    position: relative;
+}
+
+/* tooltip bottom */
+*[tooltip-b]:hover::after {
+    background-color: var(--main-color-lighter);
+    border          : 1px solid var(--main-color-lightest);
+    border-radius   : var(--border-radius-small);
+    bottom          : auto;
+    color           : var(--gray-500);
+    content         : attr(tooltip-b);
+    height          : max-content;
+    left            : -50%;
+    max-width       : 300px;
+    padding         : var(--padding-small);
+    position        : absolute;
+    right           : auto;
+    top             : calc(100% + 1px);
+    width           : max-content;
+    z-index         : var(--tooltip-z-index);
+}
+
+/* tooltip top */
+*[tooltip-t]:hover::after {
+    background-color: var(--main-color-lighter);
+    border          : 1px solid var(--main-color-lightest);
+    border-radius   : var(--border-radius-small);
+    bottom          : calc(100% + 1px);
+    color           : var(--gray-500);
+    content         : attr(tooltip-t);
+    height          : max-content;
+    left            : -50%;
+    max-width       : 300px;
+    padding         : var(--padding-small);
+    position        : absolute;
+    right           : auto;
+    top             : auto;
+    width           : max-content;
+    z-index         : 100;
+}
+
+/* tooltip left */
+*[tooltip-l]:hover::after {
+    background-color: var(--main-color-lighter);
+    border          : 1px solid var(--main-color-lightest);
+    border-radius   : var(--border-radius-small);
+    bottom          : auto;
+    color           : var(--gray-500);
+    content         : attr(tooltip-l);
+    height          : max-content;
+    left            : auto;
+    max-width       : 300px;
+    padding         : var(--padding-small);
+    position        : absolute;
+    right           : calc(100% + 1px);
+    top             : auto;
+    width           : max-content;
+    z-index         : 100;
+}
+
+/* tooltip right */
+*[tooltip-r]:hover::after {
+    background-color: var(--main-color-lighter);
+    border          : 1px solid var(--main-color-lightest);
+    border-radius   : var(--border-radius-small);
+    bottom          : auto;
+    color           : var(--gray-500);
+    content         : attr(tooltip-r);
+    height          : max-content;
+    left            : calc(100% + 1px);
+    max-width       : 300px;
+    padding         : var(--padding-small);
+    position        : absolute;
+    right           : auto;
+    top             : auto;
+    width           : max-content;
+    z-index         : 100;
+}
+
+/* container */
+div.container {
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 1em;
+    justify-content: center;
+    margin         : auto;
+}
+
+/* container styled */
+div.container.styled {
+    border-radius   : var(--border-radius-large);
+    background-color: var(--gray-900);
+    padding         : var(--padding-large);
+    border          : 1px solid var(--gray-800);
+    overflow        : hidden;
+}
+
+/* row (has column inside)*/
+div.row {
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 1em;
+    justify-content: center;
+    margin         : auto;
+}
+
+/* column (has row inside)*/
+div.column {
+    display        : flex;
+    flex-direction : column;
+    flex-wrap      : wrap;
+    gap            : 1em;
+    justify-content: center;
+    margin         : auto;
+}
+
+/* textbox */
+input.textbox {
+    background-color: var(--gray-900);
+    border          : 1px solid var(--gray-800);
+    border-radius   : var(--border-radius-small);
+    color           : var(--gray-500);
+    outline         : none;
+    outline-color   : var(--gray-800);
+    outline-width   : 0;
+    padding         : var(--padding-small);
+    transition      : all 0.2s ease-in-out;
+}
+
+/* textbox hover */
+input.textbox:hover {
+    background-color: var(--gray-800);
+    border          : 1px solid var(--gray-700);
+    color           : var(--gray-400);
+}
+
+/* textbox active */
+input.textbox:active {
+    background-color: var(--gray-700);
+}
+
+/* textbox focus */
+input.textbox:focus {
+    background-color: var(--gray-700);
+    border-radius   : var(--border-radius-small);
+    outline         : var(--gray-800) solid 2px;
+}
+
+/* if textbox contains text */
+input.textbox:not(:placeholder-shown) {
+    background-color: var(--gray-700);
+    border          : 1px solid var(--gray-700);
+    color           : var(--gray-400);
+}
+
+/* textbox placeholder */
+input.textbox::placeholder {
+    text-transform: capitalize;
+}
+
+/* password textbox */
+input.textbox.pass {
+    input-security: disc;
+}
+
+/* bar */
+div.bar {
+    background-color: var(--gray-800);
+    border          : 1px solid var(--gray-700);
+    border-radius   : var(--border-radius-small);
+    height          : 1em;
+    position        : relative;
+    width           : 100%;
+}
+
+/* loading bar */
+div.bar.loading {
+    animation          : loading-anim 1.5s ease-in-out infinite;
+    background-image   : linear-gradient(var(--gray-700) 100%, transparent 100%);
+    background-position: right;
+    background-repeat  : no-repeat;
+    background-size    : 25%;
+}
+
+/* suspended bar */
+div.bar.suspended {
+    animation: suspended-anim 1s infinite;
+}
+
+/* dialogs film (just include one per document) */
+div.dialogs-film {
+    background-color: var(--gray-900);
+    bottom          : 0;
+    display         : none;
+    left            : 0;
+    opacity         : 85%;
+    position        : fixed;
+    right           : 0;
+    top             : 0;
+    z-index         : var(--dialog-film-z-index);
+}
+
+/* dialog */
+div.dialog {
+    background-color: var(--gray-800);
+    border          : 1px solid var(--gray-700);
+    border-radius   : var(--border-radius-small);
+    color           : var(--gray-500);
+    display         : none;
+    flex-direction  : column;
+    left            : 25%;
+    position        : absolute;
+    top             : 10%;
+    transition      : all 0.2s ease-in-out;
+    width           : 50%;
+    z-index         : var(--dialog-content-z-index);
+}
+
+/* dialog partitions */
+div.dialog div {
+    display: flex;
+    padding: var(--padding-small);
+}
+
+/* dialog header */
+div.dialog div:first-child {
+    justify-content: space-between;
+}
+
+/* dialog body */
+div.dialog div:nth-child(2) {
+    flex-direction: column;
+    text-align    : center;
+    text-transform: none;
+}
+
+/* error dialog header */
+div.dialog.error div:first-child {
+    background-color: var(--red-600);
+    border          : 1px solid var(--red-400);
+    color           : var(--gray-800);
+}
+
+/* info dialog header */
+div.dialog.info div:first-child {
+    background-color: var(--blue-700);
+    border          : 1px solid var(--blue-500);
+    border-bottom   : none;
+    color           : var(--gray-300);
+}
+
+/* info dialog body */
+div.dialog.info div:nth-child(2) {
+    background-color: var(--blue-900);
+    border-bottom   : none;
+    border-top      : none;
+    border          : 1px solid var(--blue-500);
+    color           : var(--gray-400);
+}
+
+/* info dialog footer */
+div.dialog.info div:last-child {
+    background-color: var(--blue-600);
+    color           : var(--gray-300);
+    justify-content : end;
+    padding         : 4px var(--padding);
+}
+
+/* notification */
+div.notification {
+    -khtml-user-select   : none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    -webkit-touch-callout: none;
+    -webkit-user-select  : none;
+    background-color     : var(--gray-800);
+    border               : 1px solid var(--gray-700);
+    border-radius        : var(--border-radius-small);
+    bottom               : 5px;
+    color                : var(--gray-500);
+    display              : none;
+    flex-direction       : column;
+    flex-wrap            : nowrap;
+    height               : max-content;
+    left                 : auto;
+    max-width            : 50%;
+    position             : absolute;
+    position             : fixed;
+    right                : 5px;
+    top                  : auto;
+    transition           : all 0.2s ease-in-out;
+    user-select          : none;
+    z-index              : var(--notification-z-index);
+}
+
+/* notification header */
+div.notification div:first-child {
+    align-items     : center;
+    background-color: var(--gray-700);
+    display         : flex;
+    justify-content : space-between;
+    padding         : var(--padding-small);
+}
+
+/* notification body */
+div.notification div:nth-child(2) {
+    padding       : var(--padding);
+    text-transform: none;
+}
+
+/* iframe container */
+div.iframe-container {
+    -khtml-user-select   : none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    -webkit-touch-callout: none;
+    -webkit-user-select  : none;
+    background-color     : var(--gray-800);
+    border               : 1px solid var(--gray-700);
+    border-radius        : var(--border-radius-small);
+    display              : flex;
+    flex-direction       : column;
+    overflow             : hidden;
+    transition           : all 0.2s ease-in-out;
+    user-select          : none;
+}
+
+/* iframe container */
+div.iframe-container.fullscreen {
+    border-radius: 0;
+    height       : 100%;
+    left         : 0;
+    position     : fixed;
+    top          : 0;
+    width        : 100%;
+}
+
+/* iframe */
+iframe {
+    height: 100%;
+    width : 100%;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    background-color: var(--main-color-lighter);
+    width           : 10px;
+}
+
+/* scrollbar corner */
+::-webkit-scrollbar-corner {
+    background-color: var(--main-color-lighter);
+}
+
+/* scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color-lightest);
+    border-radius   : var(--border-radius-small);
+}
+
+/* scrollbar thumb hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gray-600);
+    border-radius   : var(--border-radius-small);
+}
+
+/* scrollbar thumb active */
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--main-color-lightest);
+    border-radius   : var(--border-radius-small);
+}
+
+/* selection */
+::-moz-selection {
+    background-color: var(--main-color-lighter) !important;
+    color           : var(--gray-900) !important;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* nav */
+    div.nav {
+        flex-direction: column;
+    }
+
+    /* nav start section */
+    div.nav div:nth-child(1) {
+        border-right: 0;
+    }
+
+    /* nav start section before (here, I'm putting the arrow) */
+    div.nav div:nth-child(1)::before {
+        align-items : center;
+        content     : url("https://img.icons8.com/fluency-systems-filled/16/FFFFFF/long-arrow-down.png");
+        display     : flex;
+        padding-left: var(--padding-small);
+        cursor      : pointer;
+    }
+
+    /* nav start section before active */
+    div.nav div:nth-child(1).active::before {
+        content: url("https://img.icons8.com/fluency-systems-filled/16/FFFFFF/long-arrow-up.png");
+    }
+
+    /* nav end section */
+    div.nav div:nth-child(3) {
+        justify-content: end;
+    }
+
+    /* nav center section */
+    div.nav div:nth-child(2) {
+        margin: 3px auto;
+    }
+
+    /* nav start section first btn */
+    div.nav div:nth-child(1) a.btn:first-child {
+        border-bottom-left-radius: 0;
+    }
+
+    /* nav end section first btn */
+    div.nav div:nth-child(3) a.btn:first-child {
+        border-top-left-radius: var(--border-radius-large);
+    }
+
+    /* tooltip top */
+    *[tooltip-t]::after {
+        display: none;
+    }
+
+    /* tooltip bottom */
+    *[tooltip-b]::after {
+        display: none;
+    }
+
+    /* tooltip left */
+    *[tooltip-l]::after {
+        display: none;
+    }
+
+    /* tooltip right */
+    *[tooltip-r]::after {
+        display: none;
+    }
+
+    /* dialog */
+    div.dialog {
+        left : 10%;
+        top  : 5%;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* notification */
+    div.notification {
+        left     : 5px;
+        right    : 5px;
+        max-width: 100%;
+    }
+}
+
+/* animated gradient */
+/* example how to use: */
+/* animation: gradient 2s ease-in-out infinite; */
+/* background-image: linear-gradient(to right, var(--blue-500) 50%, var(--blue-800) 50%); */
+/* background-position: right; */
+/* background-size: 200% 100%; */
+@keyframes gradient-anim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* suspended bar animation */
+@keyframes suspended-anim {
+    0% {
+        background-color: var(--main-color-lighter);
+    }
+
+    50% {
+        background-color: var(--main-color-lightest);
+    }
+
+    100% {
+        background-color: var(--main-color-lighter);
+    }
+}
+
+/* loading bar animation */
+@keyframes loading-anim {
+    0% {
+        background-position: 0%;
+        background-size    : 10%;
+    }
+
+    25% {
+        background-size: 25%;
+    }
+
+    50% {
+        background-position: 100%;
+        background-size    : 10%;
+    }
+
+    75% {
+        background-size: 25%;
+    }
+
+    100% {
+        background-position: 0%;
+        background-size    : 10%;
+    }
+}
+
+/* root */
+:root {
+    --main-color          : #212121;
+    --main-color-light    : #333;
+    --main-color-dark     : #000;
+    --main-color-lighter  : #444;
+    --main-color-darker   : #111;
+    --main-color-lightest : #555;
+    --main-color-darkest  : #222;
+    --main-color-alternate: #fff;
+
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+
+    --red-100: #fff5f5;
+    --red-200: #ffe3e3;
+    --red-300: #ffc9c9;
+    --red-400: #ffa8a8;
+    --red-500: #ff8787;
+    --red-600: #ff6b6b;
+    --red-700: #fa5252;
+    --red-800: #f03e3e;
+    --red-900: #e03131;
+
+    --blue-100: #e7f5ff;
+    --blue-200: #d0ebff;
+    --blue-300: #a5d8ff;
+    --blue-400: #74c0fc;
+    --blue-500: #4dabf7;
+    --blue-600: #339af0;
+    --blue-700: #228be6;
+    --blue-800: #1c7ed6;
+    --blue-900: #1971c2;
+
+    --green-100: #e3fafc;
+    --green-200: #c5f6fa;
+    --green-300: #99e9f2;
+    --green-400: #66d9e8;
+    --green-500: #3bc9db;
+    --green-600: #22b8cf;
+    --green-700: #15aabf;
+    --green-800: #1098ad;
+    --green-900: #0c8599;
+
+    --yellow-100: #fff9db;
+    --yellow-200: #fff3bf;
+    --yellow-300: #ffec99;
+    --yellow-400: #ffe066;
+    --yellow-500: #ffd43b;
+    --yellow-600: #fcc419;
+    --yellow-700: #fab005;
+    --yellow-800: #f59f00;
+    --yellow-900: #f08c00;
+
+    --vscode-blue-1 : #007acc;
+    --vscode-blue-2 : #006bb3;
+    --vscode-blue-3 : #005a9e;
+    --vscode-blue-4 : #003e70;
+    --vscode-blue-5 : #002240;
+    --vscode-blue-6 : #001e3d;
+    --vscode-blue-7 : #001a35;
+    --vscode-blue-8 : #00172e;
+    --vscode-blue-9 : #001426;
+    --vscode-blue-10: #00111d;
+    --vscode-blue-11: #000d14;
+    --vscode-blue-12: #000a0c;
+    --vscode-blue-13: #000000;
+
+    --border-radius      : 5px;
+    --border-radius-large: 10px;
+    --border-radius-small: 2px;
+
+    --padding      : 0.5em;
+    --padding-large: 1em;
+    --padding-small: 0.25em;
+
+    --dialog-film-z-index   : 1000;
+    --dialog-content-z-index: 1001;
+    --notification-z-index  : 1002;
+    --tooltip-z-index       : 999;
+}
