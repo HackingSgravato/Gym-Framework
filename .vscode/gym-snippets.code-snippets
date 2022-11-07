@@ -328,8 +328,8 @@
 		"scope": "html",
 		"prefix": "gym css",
 		"body": [
-			"console.log('$1');",
-			"$2"
+			"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/HackingSgravato/Gym-Framework@main/css/gym.css\">",
+			"$0",
 		],
 		"description": "Gym Css Needed Imports"
 	},
@@ -337,8 +337,11 @@
 		"scope": "html",
 		"prefix": "gym js",
 		"body": [
-			"console.log('$1');",
-			"$2"
+			"<script src=\"https://unpkg.com/@ungap/custom-elements-builtin\"></script>",
+"    <script src=\"https://cdn.jsdelivr.net/gh/HackingSgravato/Gym-Framework@main/js/external%20dependencies/x-frame-bypass.js\"></script>",
+"    <script src=\"https://cdn.jsdelivr.net/gh/HackingSgravato/Gym-Framework@main/js/gym-preload.js\"></script>",
+"    <script src=\"https://cdn.jsdelivr.net/gh/HackingSgravato/Gym-Framework@main/js/gym.js\"></script>",
+"$0",
 		],
 		"description": "Gym Js Needed Imports"
 	}
