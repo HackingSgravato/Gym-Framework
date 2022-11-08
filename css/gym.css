@@ -48,7 +48,6 @@ div.nav div {
 
 /* nav start section */
 div.nav div:nth-child(1) {
-    /*border-right: 3px solid var(--main-color-lightest);*/
     margin-right: auto;
 }
 
