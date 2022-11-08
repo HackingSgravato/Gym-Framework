@@ -48,8 +48,9 @@ div.nav div {
 
 /* nav start section */
 div.nav div:nth-child(1) {
-    margin-right: auto;
     border-right: 3px solid var(--main-color-lightest);
+    margin-right: auto;
+    overflow    : hidden;
 }
 
 /* nav start/center section */
@@ -83,7 +84,7 @@ div.iframe-container a.btn {
 
 /* toggle iframe fullscreen btn hover */
 div.iframe-container a.btn:hover {
-    outline: 0;
+    outline         : 0;
     background-color: rgba(var(--main-color-darkest), 1);
 }
 
