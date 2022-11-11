@@ -62,9 +62,9 @@ function loadNavs() {
 
     navs.forEach(nav => {
         // add click event listener
-        nav.addEventListener('click', () => {
+        nav.addEventListener('click', (e) => {
             // if target is ::before
-            if (event.target.tagName === 'DIV') {
+            if (e.target.tagName === 'DIV') {
                 // take media
                 const media = window.matchMedia('(max-width: 1024px)');
                 if (media.matches) {
