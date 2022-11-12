@@ -2,4 +2,6 @@
 
 ## _TODO_
 >
-> - [x] Nothing soon.
+> - [ ] Hint message.
+> - [ ] Join button.
+> - [ ] Position fixed class.
