@@ -5,4 +5,4 @@
 > - [ ] Hint message
 > - [ ] Join button
 > - [ ] Position fixed class
-> - [ ] Add overflow to navbar and remove "nav end section last btn" border radius change
+> - [ ] Update both "nav end section last btn" and media query one border radius change on auth status changed
