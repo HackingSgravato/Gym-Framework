@@ -2,6 +2,6 @@
 
 ## _TODO_
 >
-> - [ ] Hint message.
-> - [ ] Join button.
-> - [ ] Position fixed class.
+> - [ ] Hint message
+> - [ ] Join button
+> - [ ] Position fixed class
